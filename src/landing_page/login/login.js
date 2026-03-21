@@ -11,7 +11,7 @@ function Login(){
 
   useEffect(()=>{
     axios
-    .get("http://localhost:3002/profile",{
+    .get("https://tradex-backend-rr34.onrender.com/profile",{
       withCredentials: true,
     })
     //if user already logged in redirect to dashboard
@@ -25,7 +25,7 @@ function Login(){
 
   function handleLogin() {
     axios
-      .post("http://localhost:3002/login", { email, password },{ withCredentials: true })
+      .post("https://tradex-backend-rr34.onrender.com/login", { email, password },{ withCredentials: true })
       .then((res) => {
         setMessage(res.data.message);
         setMessageType("success");

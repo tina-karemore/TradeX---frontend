@@ -43,7 +43,7 @@ function Signup() {
                setPasswordError("");
           }
 
-          axios.post("http://localhost:3002/signup", {
+          axios.post("https://tradex-backend-rr34.onrender.com/signup", {
                name,
                email,
                password,
