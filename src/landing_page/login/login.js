@@ -16,7 +16,7 @@ function Login(){
     })
     //if user already logged in redirect to dashboard
     .then(()=>{
-      window.location.href = "http://localhost:4000"
+      window.location.href = "https://tradex-dashboard-9v17.onrender.com"
     })
     .catch(()=>{
       console.log("User not Logged in");
@@ -32,7 +32,7 @@ function Login(){
 
           setTimeout(() => {
                 window.location.href = "https://tradex-dashboard-9v17.onrender.com/dashboard";
-          });
+          },1000);
       })
       .catch((err) => {
         setMessage(err.response?.data?.message || "Server error");
