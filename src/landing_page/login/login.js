@@ -31,7 +31,7 @@ function Login(){
         setMessageType("success");
 
           setTimeout(() => {
-                window.location.href = "https://tradex-dashboard-9v17.onrender.com/dashboard";
+                window.location.href = "https://tradex-dashboard-9v17.onrender.com";
           },1000);
       })
       .catch((err) => {
